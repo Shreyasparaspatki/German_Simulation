@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 249, 249);
+}
+
+.navbar-logo img{
+    width: 200px;
+}
+
+.navbar-pages{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-pages li{
+    margin-right: 20px;
+}
+
+.navbar-pages a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+ /* privacy policy */
+
+  .container{
+    margin: 0;
+    padding-top: 10px;
+    background-color: #FFF5BB ;
+    
+  }
+
+  .container h1{
+    font-size: 2.5rem;
+    margin: auto;
+     color: red;
+  }
+
+  .container .container-content{
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .container .container-content ol{
+    margin-left: 30px;
+  }
+
+  /* privacy policy */
+
+  /* german-simulations */
+
+  #german-simulations .container{
+    background-color: #ffffff;
+    padding-top: 10px;
+  }
+  #german-simulations .container h1{
+    color: black;
+  }
+
+  /* german-simulations */
+
+   /* ibizsim section  */
+    #ibizsim .container h1{
+        color: blue;
+    }
+   /* ibizsim section  */
+
