@@ -61,11 +61,11 @@
 
   /* german-simulations */
 
-  #german-simulations .container{
+  #german-simulation .container{
     background-color: #ffffff;
     padding-top: 10px;
   }
-  #german-simulations .container h1{
+  #german-simulation .container h1{
     color: black;
   }
 
