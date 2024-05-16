@@ -1,79 +1,148 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(252, 249, 249);
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8e7e7;
+  color: #fff;
+  padding: 10px 20px;
 }
 
-.navbar-logo img{
-    width: 200px;
+.navbar-logo img {
+  width:250px; 
+  height: auto;
 }
 
-.navbar-pages{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar-pages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.navbar-pages li{
-    margin-right: 20px;
+.navbar-pages li {
+  margin-right: 20px;
 }
 
-.navbar-pages a {
-    color: black;
-    text-decoration: none;
+.navbar-pages li:last-child {
+  margin-right: 0;
+}
+
+.navbar-pages li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+#privacy-policy{
+  background-color: #fff5bb;
+}
+
+#privacy-policy .container h1{
+  color: red;
+  font-size: 50px;
+}
+
+#privacy-policy .container p{
+  line-height: 2.5rem;
+  font-size: 20px;
 }
 
 
+#german-simulation .container h1{
+  font-size: 50px;
+}
 
- /* privacy policy */
+#german-simulation .container p{
+  line-height: 2.5rem;
+  font-size: 20px;
+}
 
-  .container{
-    margin: 0;
-    padding-top: 10px;
-    background-color: #FFF5BB ;
-    
+#ibizsim {
+  background-color: #fff5bb;
+}
+
+#ibizsim .container h1{
+  color: blue;
+  font-size: 50px;
+}
+
+#ibizsim .container p{
+  line-height: 2.5rem;
+  font-size: 20px;
+} 
+
+#nextsteps .container h1{
+  color: red;
+  font-size: 60px;
+}
+
+#nextsteps .container h2{
+  font-size: 40px;
+}
+
+#nextsteps .container p{
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+
+#license{
+  background-color: #98ffb4;
+}
+
+#license .container h1{
+  font-size: 50px;
+}
+
+#license .container p{
+  font-size: 20px;
+  line-height: 2.5rem;
+}
+
+#contact h1{
+  color: blue;
+  font-size: 50px;
+}
+
+#contact p{
+  line-height: 2.5rem;
+  font-size: 25px;
+}
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-  .container h1{
-    font-size: 2.5rem;
-    margin: auto;
-     color: red;
+  .navbar-logo {
+      margin-bottom: 10px;
   }
 
-  .container .container-content{
-    max-width: 1000px;
-    margin: auto;
+  .navbar-pages {
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-  .container .container-content ol{
-    margin-left: 30px;
+  .navbar-pages li {
+      margin-right: 0;
+      margin-bottom: 10px;
   }
-
-  /* privacy policy */
-
-  /* german-simulations */
-
-  #german-simulation .container{
-    background-color: #ffffff;
-    padding-top: 10px;
-  }
-  #german-simulation .container h1{
-    color: black;
-  }
-
-  /* german-simulations */
-
-   /* ibizsim section  */
-    #ibizsim .container h1{
-        color: blue;
-    }
-   /* ibizsim section  */
-
+}
